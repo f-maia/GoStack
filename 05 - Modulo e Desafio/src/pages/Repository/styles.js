@@ -42,9 +42,31 @@ export const Owner = styled.header`
   }
 `;
 
+export const IssueFilter = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+
+  select {
+    background-color: transparent;
+    font-size: 16px;
+    color: #7159c1;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #7159c1;
+
+    option {
+      color: #eee;
+      background-color: #7159c1;
+      border-top: 1px solid #eee;
+    }
+  }
+`;
+
 export const IssueList = styled.ul`
-  padding-top: 30px;
-  margin-top: 30px;
+  padding-top: 20px;
+  margin-top: 20px;
   border-top: 1px solid #eee;
   list-style: none;
 
@@ -98,6 +120,30 @@ export const IssueList = styled.ul`
         font-size: 12px;
         color: #999;
       }
+    }
+  }
+`;
+
+export const Pagination = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  margin-top: 30px;
+
+  button {
+    background-color: transparent;
+    border: 1px solid #7159c1;
+    font-size: 16px;
+    color: #7159c1;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+
+    &:disabled {
+      color: #999;
+      border-color: #999;
     }
   }
 `;
